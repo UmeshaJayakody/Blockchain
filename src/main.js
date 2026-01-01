@@ -17,4 +17,7 @@ myBlockchain.minePendingTransactions(myWalletAddress);
 
 console.log('\nBalance of my wallet is', myBlockchain.getBalanceOfAddress(myWalletAddress));
 
+
+myBlockchain.chain[1].transaction[0].amount = 1;
+
 console.log('Is blockchain valid?', myBlockchain.isChainValid() ? 'Yes' : 'No');
